@@ -1,0 +1,165 @@
+:root{
+  --aColor: #ffffff;
+  --bColor: #2B2B2B;
+  --cColor: #eeeeee;
+	--dColor: #d0d0d0;
+}
+html{
+	scroll-behavior: smooth;
+	-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+body
+{
+	margin:0px;
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	font-family: 'Comfortaa';
+	background-color:var(--cColor);
+	/*
+	background-blend-mode:multiply 500% ;
+	background-image:url('ng.png');
+	background-repeat: repeat;
+	*/
+}
+@font-face
+{
+  font-family: 'Comfortaa';
+	src: url(Comfortaa-Regular.ttf);
+
+}
+.artistBlock
+{
+	position: relative;
+  margin:20%;
+	float: top;
+	box-shadow: 0px 0px 0px 1px var(--dColor);
+}
+.artistBlock,button.artName
+{
+	box-shadow: 0px 0px 0px 1px var(--dColor);
+}
+.artistBlock.main
+{
+  width: 60%;
+	
+}
+.artistBlock.sec
+{
+  width: 60%;
+}
+.artPic
+{
+	width: 100%;
+	z-index: 50;
+}
+button.artName
+{
+	position: absolute;
+	bottom:-15%;
+	left:0;
+	height: 15%;
+	width: 100%;
+	border: none;
+	font-size: 2vh;
+	font-family: 'Comfortaa';
+	text-align: center;
+	background: var(--aColor);
+	color: var(--bColor);
+}
+.artBtns
+{
+  position:absolute;
+	margin-bottom:0%;
+	top:0%;
+	right: 0;
+	width: 20%;
+	box-shadow: -1px 0px 0px .5px var(--dColor);
+}
+.artBtns.a1
+{
+	height:20%;
+}
+.artBtns.a2
+{
+	height:40%;
+}
+
+.artTik
+{
+	background:url('tik.svg') center no-repeat;		
+	background-size:50%;
+}
+.artIng
+{
+	background:var(--aColor) url('ing.svg') center no-repeat;		
+	background-size:60%;
+}
+.artTwi
+{
+	background:var(--aColor) url('twi.svg') center no-repeat;		
+	background-size:60%;
+}
+.artTik,.artIng,.artTwi
+{
+	background-blend-mode:difference;
+	background-color:var(--aColor);
+}
+.artTwi.b2,.artTik.b2,.artIng.b2
+{
+  height: 50%;
+}
+.artTwi.b1,.artTik.b1,.artIng.b1
+{
+  height: 100%;
+}
+
+.artTik,.artIng,.artTwi
+{
+	position: relative;
+	float: top;
+	height: 50%;
+	width: 100%;
+}
+@media (min-aspect-ratio:1/1){
+
+	.artistBlock
+	{
+		position: relative;
+		margin:2%;
+		float: left;
+		width:20% !important;
+		/*filter: drop-shadow(0 0 10px rgba(0,0,0,.3));*/
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root{
+		--aColor: #191919;
+		--bColor: #ffffff;
+		--cColor: #111111;
+		--dColor: #272727;
+	}
+}
+/* alt stlye*/
+/**/
+button.artName
+{
+	border-radius: 0 0 2px 2px;
+}
+.artistBlock
+{
+	border-radius: 2px;
+}
+/**/
+.artistBlock
+{
+	box-shadow: 0px 0px 0px 1px var(--dColor), 0px 40px 20px rgba(0, 0, 0, .1);
+}
+
+
+
+

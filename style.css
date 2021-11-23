@@ -89,12 +89,12 @@ button.artName
 
 .artTik
 {
-	background:url('tik.svg') center no-repeat;		
+	background:var(--aColor) url('tik.svg') center no-repeat;		
 	background-size:50%;
 }
 .artIng
 {
-	background: url('ing.svg') center no-repeat;		
+	background:var(--aColor) url('ing.svg') center no-repeat;		
 	background-size:60%;
 }
 .artTwi

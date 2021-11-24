@@ -75,6 +75,8 @@ button.artName
 	text-align: center;
 	background: var(--aColor);
 	color: var(--bColor);
+  background-image: linear-gradient(-26deg,rgba(128,0,254,.02),rgba(0,255,240,.02)) ;
+	
 }
 .artBtns
 {
@@ -96,6 +98,7 @@ button.artName
 	background: var(--dColor);
 	z-index: 52;
 }
+
 .artBtns.a1
 {
 	height:20%;
@@ -155,6 +158,11 @@ button.artName
 		width:20% !important;
 		/*filter: drop-shadow(0 0 10px rgba(0,0,0,.3));*/
 	}
+	body
+	{
+		height: 100%;
+
+	}
 }
 @media (prefers-color-scheme: dark) {
 	:root{
@@ -167,6 +175,7 @@ button.artName
 	body
 	{
     background-image:url('bg2.png');
+		
 	}
 }
 /* alt stlye*/

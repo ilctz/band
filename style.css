@@ -20,8 +20,8 @@ body
 	width: 100%;
 	font-family: 'Comfortaa';
 	background-color:var(--cColor);	
-	background-blend-mode: lighten;
-	background-image:url('bg2.png');
+	background-blend-mode:;
+	background-image:url('bg.png');
 	background-repeat: repeat;
 	*/
 }
@@ -30,12 +30,19 @@ body
   font-family: 'Comfortaa';
 	src: url(Comfortaa-Regular.ttf);
 }
+#bg
+{
+	position: absolute;
+	width:100%;
+	height: 100%;
+  background-image: linear-gradient(-26deg,#00FFf0,var(--aColor),var(--aColor),#8000FF) ;
+	opacity: 5%;
+}
 .artistBlock
 {
 	position: relative;
   margin:20%;
 	float: top;
-	box-shadow: 0px 0px 0px 1px var(--dColor);
 }
 .artistBlock,button.artName
 {
@@ -53,6 +60,7 @@ body
 {
 	width: 100%;
 	z-index: 50;
+	border-radius: 2px 2px 0px 0px;
 }
 button.artName
 {
@@ -77,6 +85,16 @@ button.artName
 	width: 20%;
 	box-shadow: -.5px .5px 0px .5px var(--dColor);
 	background: var(--aColor);
+}
+.sp
+{
+	position: absolute;
+	top:50%;
+	left:20%;
+	height: 1px;
+	width: 60%;
+	background: var(--dColor);
+	z-index: 52;
 }
 .artBtns.a1
 {
@@ -143,18 +161,19 @@ button.artName
 		--aColor: #191919;
 		--bColor: #ffffff;
 		--cColor: #111111;
+		--cColor: #0d0d0d;
 		--dColor: #272727;
 	}
 	body
 	{
-    background-image:url('bg.png');
+    background-image:url('bg2.png');
 	}
 }
 /* alt stlye*/
 /**/
 .artBtns
 {
-	border-radius: 0px 0px 0px 2px;
+	border-radius: 0px 2px 0px 2px;
 	overflow: hidden;
 }
 .artName
@@ -169,7 +188,7 @@ button.artName
 .artistBlock
 {
 	box-shadow: 0px 0px 0px 1px var(--dColor),
-		  0px 60px 30px -10px rgba(0, 0, 0, .2),
+		0px 60px 30px -10px rgba(0, 0, 0, .2),
 		  0px -20px 30px -10px rgba(0, 0, 0, .2);
 }
 /**

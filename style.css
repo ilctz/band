@@ -42,8 +42,8 @@ body
 .tst
 {
 	position: absolute;
-	width:10px;
-	height:10px;
+	width:0px;
+	height:10%;
 	z-index: 10;
 	border-radius: 100%;
 	/*
@@ -52,27 +52,27 @@ body
 .t1
 {
 	top:30%;
-	right:-10%;
+	right:0%;
 	box-shadow:	0px 0px 200px 100px	rgba(255,0,0,.1);
 	animation: t1 5s ease-in-out infinite;
 	
 }
 @keyframes t1 {
-    0%{	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.08);}
-    50%{	box-shadow: 0px 0px 200px 100px rgba(0,255,0,.08);}
-    100%{	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.08);}
+    0%{	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.04);}
+    50%{	box-shadow: 0px 0px 200px 100px rgba(0,255,0,.04);}
+    100%{	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.04);}
 }
 .t2
 {
 	bottom:30%;
-	left:-10%;
+	left:0%;
 	animation: t2 5s ease-in-out infinite;
 	
 }
 @keyframes t2 {
-    0%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.08);}
-    50%{ box-shadow: 0px 0px 200px 100px rgba(120,0,120,.08);}
-    100%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.08);}
+    0%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.04);}
+    50%{ box-shadow: 0px 0px 200px 100px rgba(120,0,120,.04);}
+    100%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.04);}
 }
 #bg
 {
@@ -88,11 +88,13 @@ body
 		-200px -200px 200px -200px
 		rgba(0,255,240,.08)	
 		inset;	
+	/*
 	-webkit-animation: gradi 3s ease infinite;
 	-moz-animation: gradi 3s ease infinite;
 	-o-animation: gradi 3s ease infinite;
-	animation: gradi 8s ease-in-out infinite;
+	animation: gradi 8s ease-in-out infinite;*/
 }
+/*
 @-webkit-keyframes gradi {
     0%{	box-shadow: 200px 200px 200px -200px
 			rgba(128,0,255,.08)
@@ -160,7 +162,7 @@ body
 			inset, -200px -200px 200px -200px
 			rgba(0,255,240,.08)	
 			inset;}
-}
+}*/
 .artistBlock
 {
 	position: relative;
@@ -301,11 +303,11 @@ button.artName
 
 @media (prefers-color-scheme: dark) {
 	:root{
-		--aColor: #191919;
+		--aColor: #0f0f0f;
 		--bColor: #ffffff;
 		--cColor: #111111;
-		--cColor: #0d0d0d;
-		--dColor: #272727;
+		--cColor: #1a1a1a;
+		--dColor: #262626;
 	}
 	body
 	{
@@ -423,60 +425,3 @@ button.artName
 {
 	box-shadow: none;
 }
-/**
-body
-{
-	background-image:  none;
-}
-.artistBlock
-{
-	width: 100% !important;
-	margin: 0%;
-	border-radius: var(--aBorderR);
-	box-shadow: none;
-}
-.artPic
-{
-	border-radius: var(--aBorderR);
-}
-.artPic.p1
-{
-  background-image: url('a1.png');
-}
-.artPic.p2
-{
-  background-image: url('a2.png');
-}
-.artPic.p3
-{
-  background-image: url('a3.png');
-}
-.artPic.p4
-{
-  background-image: url('a4.png');
-}
-button.artName
-{
-	display:block;
-	bottom: 0% !important;
-	box-shadow: none!important;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: 3vh;
-	/*backdrop-filter: blur(20px);
-	background-image:linear-gradient(-26deg,rgb(196, 137, 255) 10%,rgb(179, 255, 251));
-  */
-
-
-/**
-.artBtns
-{
-	background-image:url('bg.png');
-	background-repeat: repeat;
-	background-color:var(--aColor);
-}
-
-
-
-

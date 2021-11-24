@@ -39,6 +39,7 @@ body
   font-family: 'Comfortaa';
 	src: url(Comfortaa-Regular.ttf);
 }
+/*
 .tst
 {
 	position: absolute;
@@ -46,8 +47,8 @@ body
 	height:10%;
 	z-index: 10;
 	border-radius: 100%;
-	/*
-	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.1);*/
+	
+	box-shadow: 0px 0px 200px 100px rgba(255,0,0,.1);
 }
 .t1
 {
@@ -73,7 +74,7 @@ body
     0%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.04);}
     50%{ box-shadow: 0px 0px 200px 100px rgba(120,0,120,.04);}
     100%{	box-shadow: 0px 0px 200px 100px rgba(0,0,255,.04);}
-}
+}*/
 #bg
 {
 	position: absolute;
